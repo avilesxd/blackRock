@@ -12,7 +12,7 @@ function Navbar() {
         </Link>
 
         <div className="flex items-center space-x-6">
-          <div className="hidden md:flex space-x-4">
+          <div className="md:flex space-x-4">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.name}

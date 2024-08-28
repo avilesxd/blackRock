@@ -2,14 +2,17 @@
 
 import { Button } from '@/components/ui/button';
 import React from 'react';
+import TitleName from './PersonName';
+import PersonDescription from './PersonDescription';
 
 interface PersonCardProps {
   name: string;
+  description: string;
   photo: string;
   resumeFile: string;
 }
 
-const PersonCard = ({ name, photo, resumeFile }: PersonCardProps) => {
+const PersonCard = ({ name, description, photo, resumeFile }: PersonCardProps) => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = `/${resumeFile}`;
@@ -24,9 +27,8 @@ const PersonCard = ({ name, photo, resumeFile }: PersonCardProps) => {
         src={photo || `/${name}.png`}
         alt={`Foto de ${name}`}
       />
-      <h2 className="text-2xl font-bold md:text-3xl dark:text-gray-100 mb-2">
-        {name}
-      </h2>
+      <TitleName name={name} />
+      <PersonDescription description={description} />
       <Button onClick={handleDownload}>
         Descargar currículum
       </Button>
