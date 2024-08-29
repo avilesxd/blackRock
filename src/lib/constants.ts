@@ -6,25 +6,25 @@ const SETTINGS = {
 const INTEGRANTES = [
   {
     name: "Ignacio Avilés",
-    description: "Fullstack Developer",
+    description: "Jefe de Proyecto - Desarrollador Web",
     photo: "https://avatars.githubusercontent.com/u/88689569?v=4",
     resumeFile: "curriculum1.pdf",
   },
   {
     name: "Juan Galaz",
-    description: "Fullstack Developer",
+    description: "Diseñador Gráfico",
     photo: "https://avatars.githubusercontent.com/u/88689569?v=4",
     resumeFile: "curriculum2.pdf",
   },
   {
     name: "Denilson Escobar",
-    description: "Fullstack Developer",
+    description: "Desarrollador Web",
     photo: "https://avatars.githubusercontent.com/u/88689569?v=4",
     resumeFile: "curriculum3.pdf",
   },
   {
     name: "Jorge Cruz",
-    description: "Fullstack Developer",
+    description: "Gestor de Proyecto",
     photo: "https://avatars.githubusercontent.com/u/88689569?v=4",
     resumeFile: "curriculum4.pdf",
   },
