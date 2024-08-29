@@ -9,14 +9,14 @@ interface PersonCardProps {
   name: string;
   description: string;
   photo: string;
-  resumeFile: string;
+  curriculum: string;
 }
 
-const PersonCard = ({ name, description, photo, resumeFile }: PersonCardProps) => {
+const PersonCard = ({ name, description, photo, curriculum }: PersonCardProps) => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = `/${resumeFile}`;
-    link.download = resumeFile;
+    link.href = `/${curriculum}`;
+    link.download = curriculum;
     link.click();
   };
 
