@@ -25,7 +25,7 @@ const INTEGRANTES = [
   {
     name: "Jorge Cruz",
     description: "Gestor de Proyecto",
-    photo: "https://avatars.githubusercontent.com/u/88689569?v=4",
+    photo: "",
     curriculum: "curriculum4.pdf",
   },
 ];
