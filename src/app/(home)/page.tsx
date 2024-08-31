@@ -10,7 +10,7 @@ export default function Home() {
           Santo Tomas, específicamente para la Dirección de Asuntos Estudiantiles (DAE),
           que facilite la gestión integral de actividades y eventos. Esta solución permitirá
           la planificación eficiente, la recolección automatizada de datos clave y el análisis
-          en tiempo real, optimizando la toma de decisiones...
+          en tiempo real, optimizando la toma de decisiones.
         </p>
       </Section>
 
@@ -26,27 +26,27 @@ export default function Home() {
             title="Recolección de datos"
             description="El software recopilará datos clave sobre eventos y actividades programadas,
             incluyendo detalles de los estudiantes interesados, confirmación de asistencia, 
-            y otros factores relevantes..."
+            y otros factores relevantes."
           />
           <ListItem
             title="Análisis de datos"
             description="Los datos recopilados se usarán para identificar patrones de asistencia a eventos
-            pasados, el nivel de participación estudiantil..."
+            pasados, el nivel de participación estudiantil."
           />
           <ListItem
             title="Predicción de asistencia"
             description="A través del análisis de datos históricos y la confirmación de asistencia, el
-            software podrá predecir la cantidad de asistentes a un evento..."
+            software podrá predecir la cantidad de asistentes a un evento."
           />
           <ListItem
             title="Planificación de eventos"
             description="Basado en datos y proyecciones, la DAE podrá organizar los eventos de manera más
-            efectiva, ajustando la cantidad de recursos, instalaciones..."
+            efectiva, ajustando la cantidad de recursos, instalaciones."
           />
           <ListItem
             title="Retroalimentación para eventos futuros"
             description="Los datos obtenidos tras los eventos permitirán a la DAE ajustar estrategias y
-            mejorar la organización de futuros eventos..."
+            mejorar la organización de futuros eventos."
           />
         </ul>
       </Section>
