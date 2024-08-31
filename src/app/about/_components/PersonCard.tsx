@@ -13,11 +13,8 @@ interface PersonCardProps {
 }
 
 const PersonCard = ({ name, description, photo, curriculum }: PersonCardProps) => {
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = `/${curriculum}`;
-    link.download = curriculum;
-    link.click();
+  const handleOpenCurriculum = () => {
+    window.open(`/${curriculum}`, '_blank');
   };
 
   return (
@@ -29,8 +26,8 @@ const PersonCard = ({ name, description, photo, curriculum }: PersonCardProps) =
       />
       <TitleName name={name} />
       <PersonDescription description={description} />
-      <Button onClick={handleDownload}>
-        Descargar currículum
+      <Button onClick={handleOpenCurriculum}>
+        Ver currículum
       </Button>
     </div>
   );
