@@ -2,13 +2,14 @@ import React from 'react';
 import { ModeToggle } from './ModeToggle';
 import { NAV_LINKS } from '@/lib/constants';
 import Link from 'next/link';
+import Logo from './Logo';
 
 function Navbar() {
   return (
     <nav className="bg-white border-gray-200 px-4 sm:px-6 py-3 dark:bg-gray-800 shadow-md">
       <div className="container mx-auto flex flex-wrap justify-between items-center">
         <Link href={NAV_LINKS[0].href} className="text-xl font-semibold text-gray-900 dark:text-white">
-          Black Rock
+          <Logo />
         </Link>
 
         <div className="flex items-center space-x-6">
