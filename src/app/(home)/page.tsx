@@ -1,3 +1,6 @@
+"use client";
+
+import { Button } from "@/components/ui/button";
 import ListItem from "./_components/ListItem";
 import Section from "./_components/Section";
 
@@ -6,20 +9,21 @@ export default function Home() {
     <main>
       <Section title="Ideas">
         <p className="text-justify leading-relaxed">
-          Desarrollar una plataforma web para la institución de educación superior
-          Santo Tomas, específicamente para la Dirección de Asuntos Estudiantiles (DAE),
-          que facilite la gestión integral de actividades y eventos. Esta solución permitirá
-          la planificación eficiente, la recolección automatizada de datos clave y el análisis
-          en tiempo real, optimizando la toma de decisiones.
+          Desarrollar una plataforma web para la institución de educación
+          superior Santo Tomas, específicamente para la Dirección de Asuntos
+          Estudiantiles (DAE), que facilite la gestión integral de actividades y
+          eventos. Esta solución permitirá la planificación eficiente, la
+          recolección automatizada de datos clave y el análisis en tiempo real,
+          optimizando la toma de decisiones.
         </p>
       </Section>
 
       <Section title="Análisis">
         <p className="text-justify leading-relaxed">
-          El proyecto tiene como objetivo desarrollar una plataforma web para la Dirección de
-          Asuntos Estudiantiles (DAE) de la institución Santo Tomas, enfocada en la gestión
-          eficiente de eventos estudiantiles. Esta plataforma permitirá a la DAE realizar las
-          siguientes tareas clave:
+          El proyecto tiene como objetivo desarrollar una plataforma web para la
+          Dirección de Asuntos Estudiantiles (DAE) de la institución Santo
+          Tomas, enfocada en la gestión eficiente de eventos estudiantiles. Esta
+          plataforma permitirá a la DAE realizar las siguientes tareas clave:
         </p>
         <ul className="list-disc mt-4">
           <ListItem
@@ -49,6 +53,15 @@ export default function Home() {
             mejorar la organización de futuros eventos."
           />
         </ul>
+      </Section>
+
+      <Section title="Prototipo">
+        <Button
+          className="w-full"
+          onClick={() => window.open("/appDAE.pdf", "_blank")}
+        >
+          Ver prototipo
+        </Button>
       </Section>
 
       <img
