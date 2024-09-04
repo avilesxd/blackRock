@@ -5,12 +5,12 @@ function Logo() {
     <div>
       <img
         className="h-12 w-15 dark:hidden"
-        src="/logoBlack.png"
+        src="/logoWhite.png"
         alt="Logo de Black Rock"
       />
       <img
         className="h-12 w-15 hidden dark:block"
-        src="/logo.png"
+        src="/logoBlack.png"
         alt="Logo de Black Rock"
       />
     </div>
