@@ -55,6 +55,15 @@ export default function Home() {
         </ul>
       </Section>
 
+      <Section title="Contrato">
+        <Button
+          className="w-full"
+          onClick={() => window.open("/ContratoTrabajoEquipo.pdf", "_blank")}
+        >
+          Ver contrato
+        </Button>
+      </Section>
+
       <Section title="Prototipo">
         <Button
           className="w-full"
