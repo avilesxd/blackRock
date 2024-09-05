@@ -16,7 +16,7 @@ const INTEGRANTES = [
   },
   {
     name: "Denilson Escobar",
-    description: "Desarrollador Web",
+    description: "Desarrollador Web - Gestor Financiero",
     curriculum: "curriculum3.pdf",
   },
   {
