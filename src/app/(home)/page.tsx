@@ -64,6 +64,12 @@ export default function Home() {
         </Button>
       </Section>
 
+      <Section title="Carta Gantt">
+        <Button className="w-full" onClick={() => window.open("/cartaGanttAppDAE.pdf", "_blank")}>
+          Ver Carta Gantt
+        </Button>
+      </Section>
+
       <img
         className="w-full mb-2 dark:border-collapse border-2 border-black dark:border-teal-50"
         src="/sistema.jpg"
