@@ -37,4 +37,11 @@ const NAV_LINKS = [
   },
 ];
 
-export { SETTINGS, INTEGRANTES, NAV_LINKS };
+const documents = [
+  { title: "Contrato", link: "/documentos/ContratoTrabajoEquipo.pdf" },
+  { title: "Prototipo", link: "/documentos/appDAE.pdf" },
+  { title: "Carta Gantt", link: "/documentos/cartaGanttAppDAE.pdf" },
+  { title: "Costos Operativos", link: "/documentos/CostosOperativos.pdf" },
+];
+
+export { SETTINGS, INTEGRANTES, NAV_LINKS, documents };
