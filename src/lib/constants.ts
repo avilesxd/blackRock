@@ -7,22 +7,22 @@ const INTEGRANTES = [
   {
     name: "Ignacio Avilés",
     description: "Jefe de Proyecto - Desarrollador Web",
-    curriculum: "curriculum1.pdf",
+    curriculum: "IgnacioAviles.pdf",
   },
   {
     name: "Juan Galaz",
     description: "Diseñador Gráfico",
-    curriculum: "curriculum2.pdf",
+    curriculum: "JuanGalaz.pdf",
   },
   {
     name: "Denilson Escobar",
     description: "Desarrollador Web - Gestor Financiero",
-    curriculum: "curriculum3.pdf",
+    curriculum: "DenilsonEscobar.pdf",
   },
   {
     name: "Jorge Cruz",
     description: "Gestor de Proyecto",
-    curriculum: "curriculum4.pdf",
+    curriculum: "JorgeCruz.pdf",
   },
 ];
 
@@ -37,4 +37,11 @@ const NAV_LINKS = [
   },
 ];
 
-export { SETTINGS, INTEGRANTES, NAV_LINKS };
+const documents = [
+  { title: "Contrato", link: "/documentos/ContratoTrabajoEquipo.pdf" },
+  { title: "Prototipo", link: "/documentos/appDAE.pdf" },
+  { title: "Carta Gantt", link: "/documentos/cartaGanttAppDAE.pdf" },
+  { title: "Costos Operativos", link: "/documentos/CostosOperativos.pdf" },
+];
+
+export { SETTINGS, INTEGRANTES, NAV_LINKS, documents };

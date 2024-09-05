@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import ListItem from "./_components/ListItem";
 import Section from "./_components/Section";
+import { documents } from "@/lib/constants";
 
 export default function Home() {
   return (
@@ -55,28 +56,16 @@ export default function Home() {
         </ul>
       </Section>
 
-      <Section title="Contrato">
-        <Button
-          className="w-full"
-          onClick={() => window.open("/ContratoTrabajoEquipo.pdf", "_blank")}
-        >
-          Ver contrato
-        </Button>
-      </Section>
-
-      <Section title="Prototipo">
-        <Button
-          className="w-full"
-          onClick={() => window.open("/appDAE.pdf", "_blank")}
-        >
-          Ver prototipo
-        </Button>
-      </Section>
-
-      <Section title="Carta Gantt">
-        <Button className="w-full" onClick={() => window.open("/cartaGanttAppDAE.pdf", "_blank")}>
-          Ver Carta Gantt
-        </Button>
+      <Section title="Documentos">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {documents.map(({ title, link }) => (
+            <Section key={title} title={title}>
+              <Button className="w-full" onClick={() => window.open(link, "_blank")}>
+                Ver {title}
+              </Button>
+            </Section>
+          ))}
+        </div>
       </Section>
 
       <img
