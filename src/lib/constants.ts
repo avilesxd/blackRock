@@ -7,22 +7,22 @@ const INTEGRANTES = [
   {
     name: "Ignacio Avilés",
     description: "Jefe de Proyecto - Desarrollador Web",
-    curriculum: "curriculum1.pdf",
+    curriculum: "IgnacioAviles.pdf",
   },
   {
     name: "Juan Galaz",
     description: "Diseñador Gráfico",
-    curriculum: "curriculum2.pdf",
+    curriculum: "JuanGalaz.pdf",
   },
   {
     name: "Denilson Escobar",
     description: "Desarrollador Web - Gestor Financiero",
-    curriculum: "curriculum3.pdf",
+    curriculum: "DenilsonEscobar.pdf",
   },
   {
     name: "Jorge Cruz",
     description: "Gestor de Proyecto",
-    curriculum: "curriculum4.pdf",
+    curriculum: "JorgeCruz.pdf",
   },
 ];
 

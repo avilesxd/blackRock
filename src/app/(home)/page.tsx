@@ -55,28 +55,46 @@ export default function Home() {
         </ul>
       </Section>
 
-      <Section title="Contrato">
-        <Button
-          className="w-full"
-          onClick={() => window.open("/ContratoTrabajoEquipo.pdf", "_blank")}
-        >
-          Ver contrato
-        </Button>
-      </Section>
+      <Section title="Documentos">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Section title="Contrato">
+            <Button
+              className="w-full"
+              onClick={() =>
+                window.open("/documentos/ContratoTrabajoEquipo.pdf", "_blank")
+              }
+            >
+              Ver contrato
+            </Button>
+          </Section>
 
-      <Section title="Prototipo">
-        <Button
-          className="w-full"
-          onClick={() => window.open("/appDAE.pdf", "_blank")}
-        >
-          Ver prototipo
-        </Button>
-      </Section>
+          <Section title="Prototipo">
+            <Button
+              className="w-full"
+              onClick={() => window.open("/documentos/appDAE.pdf", "_blank")}
+            >
+              Ver prototipo
+            </Button>
+          </Section>
 
-      <Section title="Carta Gantt">
-        <Button className="w-full" onClick={() => window.open("/cartaGanttAppDAE.pdf", "_blank")}>
-          Ver Carta Gantt
-        </Button>
+          <Section title="Carta Gantt">
+            <Button
+              className="w-full"
+              onClick={() => window.open("/documentos/cartaGanttAppDAE.pdf", "_blank")}
+            >
+              Ver Carta Gantt
+            </Button>
+          </Section>
+
+          <Section title="Costos Operativos">
+            <Button
+              className="w-full"
+              onClick={() => window.open("/documentos/CostosOperativos.pdf", "_blank")}
+            >
+              Ver Costos Operativos
+            </Button>
+          </Section>
+        </div>
       </Section>
 
       <img

@@ -13,7 +13,7 @@ interface PersonCardProps {
 
 const PersonCard = ({ name, description, curriculum }: PersonCardProps) => {
   const handleOpenCurriculum = () => {
-    window.open(`/${curriculum}`, '_blank');
+    window.open(`/curriculum/${curriculum}`, '_blank');
   };
 
   return (
