@@ -1,3 +1,6 @@
+import { link } from "fs";
+import { title } from "process";
+
 const SETTINGS = {
   NAME: "Black Rock",
   DESCRIPTION: "Proyecto universitario",
@@ -37,11 +40,23 @@ const NAV_LINKS = [
   },
 ];
 
-const documents = [
+const DOCUMENTS = [
   { title: "Contrato", link: "/documentos/ContratoTrabajoEquipo.pdf" },
   { title: "Prototipo", link: "/documentos/appDAE.pdf" },
   { title: "Carta Gantt", link: "/documentos/cartaGanttAppDAE.pdf" },
   { title: "Costos Operativos", link: "/documentos/CostosOperativos.pdf" },
+  { title: "Avance informe n°1", link: "/documentos/informe1.pdf" },
 ];
 
-export { SETTINGS, INTEGRANTES, NAV_LINKS, documents };
+const FILES = [
+  { title: "Acta de reuniones", link: "/archivos/Acta reuniones.docx" },
+  {
+    title: "Contrato de Trabajo",
+    link: "/archivos/ContratoTrabajoEquipo.docx",
+  },
+  { title: "Costos Operativos", link: "/archivos/CostosOperativos.xlsx" },
+  { title: "Carta Gantt Proyect", link: "/archivos/informeProyecto.mpp" },
+  { title: "Presentacion Pitch", link: "/archivos/presentacion pitch.pptx" },
+];
+
+export { SETTINGS, INTEGRANTES, NAV_LINKS, DOCUMENTS, FILES };

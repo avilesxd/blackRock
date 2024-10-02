@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import ListItem from "./_components/ListItem";
 import Section from "./_components/Section";
-import { documents } from "@/lib/constants";
+import { DOCUMENTS, FILES } from "@/lib/constants";
 
 export default function Home() {
   return (
@@ -58,7 +58,19 @@ export default function Home() {
 
       <Section title="Documentos">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {documents.map(({ title, link }) => (
+          {DOCUMENTS.map(({ title, link }) => (
+            <Section key={title} title={title}>
+              <Button className="w-full" onClick={() => window.open(link, "_blank")}>
+                Ver {title}
+              </Button>
+            </Section>
+          ))}
+        </div>
+      </Section>
+
+      <Section title="Archivos">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {FILES.map(({ title, link }) => (
             <Section key={title} title={title}>
               <Button className="w-full" onClick={() => window.open(link, "_blank")}>
                 Ver {title}
