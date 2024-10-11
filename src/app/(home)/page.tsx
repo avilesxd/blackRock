@@ -9,23 +9,19 @@ export default function Home() {
   return (
     <main>
       <Section title="Ideas">
-        <p className="text-justify leading-relaxed">
-          Desarrollar una plataforma web para la institución de educación
-          superior Santo Tomas, específicamente para la Dirección de Asuntos
-          Estudiantiles (DAE), que facilite la gestión integral de actividades y
-          eventos. Esta solución permitirá la planificación eficiente, la
-          recolección automatizada de datos clave y el análisis en tiempo real,
-          optimizando la toma de decisiones.
-        </p>
+        Desarrollar una plataforma web para la institución de educación superior
+        Santo Tomas, específicamente para la Dirección de Asuntos Estudiantiles
+        (DAE), que facilite la gestión integral de actividades y eventos. Esta
+        solución permitirá la planificación eficiente, la recolección
+        automatizada de datos clave y el análisis en tiempo real, optimizando la
+        toma de decisiones.
       </Section>
 
       <Section title="Análisis">
-        <p className="text-justify leading-relaxed">
-          El proyecto tiene como objetivo desarrollar una plataforma web para la
-          Dirección de Asuntos Estudiantiles (DAE) de la institución Santo
-          Tomas, enfocada en la gestión eficiente de eventos estudiantiles. Esta
-          plataforma permitirá a la DAE realizar las siguientes tareas clave:
-        </p>
+        El proyecto tiene como objetivo desarrollar una plataforma web para la
+        Dirección de Asuntos Estudiantiles (DAE) de la institución Santo Tomas,
+        enfocada en la gestión eficiente de eventos estudiantiles. Esta
+        plataforma permitirá a la DAE realizar las siguientes tareas clave:
         <ul className="list-disc mt-4">
           <ListItem
             title="Recolección de datos"
@@ -60,7 +56,10 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {DOCUMENTS.map(({ title, link }) => (
             <Section key={title} title={title}>
-              <Button className="w-full" onClick={() => window.open(link, "_blank")}>
+              <Button
+                className="w-full"
+                onClick={() => window.open(link, "_blank")}
+              >
                 Ver {title}
               </Button>
             </Section>
@@ -72,7 +71,10 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {FILES.map(({ title, link }) => (
             <Section key={title} title={title}>
-              <Button className="w-full" onClick={() => window.open(link, "_blank")}>
+              <Button
+                className="w-full"
+                onClick={() => window.open(link, "_blank")}
+              >
                 Ver {title}
               </Button>
             </Section>

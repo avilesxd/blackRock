@@ -1,9 +1,9 @@
 "use client";
 
-import { Button } from '@/components/ui/button';
-import React from 'react';
-import TitleName from './PersonName';
-import PersonDescription from './PersonDescription';
+import { Button } from "@/components/ui/button";
+import React from "react";
+import TitleName from "./PersonName";
+import PersonDescription from "./PersonDescription";
 
 interface PersonCardProps {
   name: string;
@@ -13,7 +13,7 @@ interface PersonCardProps {
 
 const PersonCard = ({ name, description, curriculum }: PersonCardProps) => {
   const handleOpenCurriculum = () => {
-    window.open(`/curriculum/${curriculum}`, '_blank');
+    window.open(`/curriculum/${curriculum}`, "_blank");
   };
 
   return (
@@ -25,9 +25,7 @@ const PersonCard = ({ name, description, curriculum }: PersonCardProps) => {
       />
       <TitleName name={name} />
       <PersonDescription description={description} />
-      <Button onClick={handleOpenCurriculum}>
-        Ver currículum
-      </Button>
+      <Button onClick={handleOpenCurriculum}>Ver currículum</Button>
     </div>
   );
 };

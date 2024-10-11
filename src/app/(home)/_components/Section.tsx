@@ -1,13 +1,19 @@
-import React from 'react'
-import Title from './Title'
+import React from "react";
+import Title from "./Title";
 
-function Section({ title, children }: { title: string, children: React.ReactNode }) {
+function Section({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
   return (
     <section className="py-12 px-4 md:px-8">
       <Title title={title} />
-      {children}
+      <p className="text-justify leading-relaxed">{children}</p>
     </section>
-  )
+  );
 }
 
-export default Section
+export default Section;

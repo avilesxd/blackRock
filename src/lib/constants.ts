@@ -1,6 +1,3 @@
-import { link } from "fs";
-import { title } from "process";
-
 const SETTINGS = {
   NAME: "Black Rock",
   DESCRIPTION: "Proyecto universitario",
