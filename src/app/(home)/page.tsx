@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import ListItem from "./_components/ListItem";
 import Section from "./_components/Section";
-import { DOCUMENTS, FILES } from "@/lib/constants";
+import { DOCUMENTS } from "@/lib/constants";
 
 export default function Home() {
   return (
