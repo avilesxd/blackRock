@@ -45,16 +45,4 @@ const DOCUMENTS = [
   { title: "Avance informe n°1", link: "/documentos/informe1.pdf" },
 ];
 
-const FILES = [
-  { title: "Acta de reuniones", link: "/archivos/Acta reuniones.docx" },
-  {
-    title: "Contrato de Trabajo",
-    link: "/archivos/ContratoTrabajoEquipo.docx",
-  },
-  { title: "Costos Operativos", link: "/archivos/CostosOperativos.xlsx" },
-  { title: "Carta Gantt Proyect", link: "/archivos/informeProyecto.mpp" },
-  { title: "Presentacion Pitch", link: "/archivos/presentacion pitch.pptx" },
-  { title: "Informe n°1", link: "/archivos/informe1.docx" },
-];
-
-export { SETTINGS, INTEGRANTES, NAV_LINKS, DOCUMENTS, FILES };
+export { SETTINGS, INTEGRANTES, NAV_LINKS, DOCUMENTS };

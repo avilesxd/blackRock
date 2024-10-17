@@ -66,22 +66,6 @@ export default function Home() {
           ))}
         </div>
       </Section>
-
-      <Section title="Archivos">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {FILES.map(({ title, link }) => (
-            <Section key={title} title={title}>
-              <Button
-                className="w-full"
-                onClick={() => window.open(link, "_blank")}
-              >
-                Ver {title}
-              </Button>
-            </Section>
-          ))}
-        </div>
-      </Section>
-
       <img
         className="w-full mb-2 dark:border-collapse border-2 border-black dark:border-teal-50"
         src="/sistema.jpg"
