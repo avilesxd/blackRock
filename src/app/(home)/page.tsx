@@ -1,9 +1,7 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import Section from "@/components/shared/Section";
 import ListItem from "./_components/ListItem";
-import Section from "./_components/Section";
-import { DOCUMENTS } from "@/lib/constants";
 
 export default function Home() {
   return (
@@ -50,21 +48,6 @@ export default function Home() {
             mejorar la organización de futuros eventos."
           />
         </ul>
-      </Section>
-
-      <Section title="Documentos">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {DOCUMENTS.map(({ title, link }) => (
-            <Section key={title} title={title}>
-              <Button
-                className="w-full"
-                onClick={() => window.open(link, "_blank")}
-              >
-                Ver {title}
-              </Button>
-            </Section>
-          ))}
-        </div>
       </Section>
       <img
         className="w-full mb-2 dark:border-collapse border-2 border-black dark:border-teal-50"

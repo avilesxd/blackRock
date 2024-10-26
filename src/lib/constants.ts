@@ -32,6 +32,10 @@ const NAV_LINKS = [
     href: "/",
   },
   {
+    name: "Proyectos",
+    href: "/projects",
+  },
+  {
     name: "Sobre nosotros",
     href: "/about",
   },
