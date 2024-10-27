@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // Iconos para abrir/cerrar el menú
+import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "@/lib/constants";
 import Logo from "@/components/Logo";
 import { ModeToggle } from "@/components/ModeToggle";
@@ -30,13 +30,11 @@ const MobileNavbar = () => {
             className="text-gray-700 dark:text-gray-200"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}{" "}
-            {/* Alterna entre íconos */}
           </button>
           <ModeToggle />
         </div>
       </div>
 
-      {/* Menú desplegable */}
       {isOpen && (
         <div className="mt-2 space-y-2">
           {NAV_LINKS.map((link) => (
