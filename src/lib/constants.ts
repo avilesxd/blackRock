@@ -46,7 +46,7 @@ const DOCUMENTS = [
   { title: "Prototipo", link: "/documentos/appDAE.pdf" },
   { title: "Carta Gantt", link: "/documentos/cartaGanttAppDAE.pdf" },
   { title: "Costos Operativos", link: "/documentos/CostosOperativos.pdf" },
-  { title: "Avance informe n°1", link: "/documentos/informe1.pdf" },
+  { title: "Informe", link: "/documentos/informe1.pdf" },
 ];
 
 export { SETTINGS, INTEGRANTES, NAV_LINKS, DOCUMENTS };
