@@ -15,11 +15,11 @@ const MobileNavbar = () => {
   };
 
   return (
-    <nav className="bg-white border-gray-200 px-4 py-3 dark:bg-gray-800 shadow-md">
+    <nav className="bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800 shadow-lg px-4 py-3 border-b border-gray-200 dark:border-gray-700">
       <div className="container mx-auto flex justify-between items-center">
         <Link
           href={NAV_LINKS[0].href}
-          className="text-xl font-semibold text-gray-900 dark:text-white"
+          className="text-xl font-semibold text-gray-900 dark:text-white transition-transform transform hover:scale-105"
         >
           <Logo />
         </Link>
@@ -27,21 +27,21 @@ const MobileNavbar = () => {
         <div className="flex items-center space-x-4">
           <button
             onClick={toggleMenu}
-            className="text-gray-700 dark:text-gray-200"
+            className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}{" "}
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
           <ModeToggle />
         </div>
       </div>
 
       {isOpen && (
-        <div className="mt-2 space-y-2">
+        <div className="mt-4 bg-white dark:bg-gray-900 shadow-lg rounded-lg p-4">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className="block text-gray-700 hover:text-blue-700 dark:text-gray-200 dark:hover:text-blue-400 font-medium px-4 py-2"
+              className="block text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 font-medium px-4 py-2 transition-colors"
             >
               {link.name}
             </Link>
