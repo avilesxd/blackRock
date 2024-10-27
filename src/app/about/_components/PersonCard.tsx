@@ -2,8 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import React from "react";
-import TitleName from "./PersonName";
 import PersonDescription from "./PersonDescription";
+import PersonName from "./PersonName";
 
 interface PersonCardProps {
   name: string;
@@ -23,7 +23,7 @@ const PersonCard = ({ name, description, curriculum }: PersonCardProps) => {
         src={`/fotos/${name}.jpg`}
         alt={`Foto de ${name}`}
       />
-      <TitleName name={name} />
+      <PersonName name={name} />
       <PersonDescription description={description} />
       <Button onClick={handleOpenCurriculum}>Ver currículum</Button>
     </div>
