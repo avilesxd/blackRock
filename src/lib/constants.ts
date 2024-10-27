@@ -32,7 +32,7 @@ const NAV_LINKS = [
     href: "/",
   },
   {
-    name: "documentos",
+    name: "Documentos",
     href: "/documents",
   },
   {
