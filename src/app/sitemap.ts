@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: "https://blackrockteam.vercel.app/projects",
+      url: "https://blackrockteam.vercel.app/documents",
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 1,
