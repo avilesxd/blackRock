@@ -1,14 +1,19 @@
 import { INTEGRANTES } from "@/lib/constants";
 import React from "react";
-import PersonCard from "./_components/PersonCard";
+import PersonCard from "./_components/ourTeam/PersonCard";
+import Price from "./_components/price/Price";
+import TitleAbout from "./_components/shared/TitleAbout";
+import Services from "./_components/services/services";
+import AboutUs from "./_components/aboutUs/AboutUs";
 
 function AboutPage() {
   return (
     <section className="py-16 px-6 md:px-10 dark:from-gray-900 dark:to-gray-800">
       <div className="text-center mb-16">
-        <h1 className="text-5xl font-extrabold text-gray-900 dark:text-white mb-4">
-          Nuestro Equipo
-        </h1>
+        <AboutUs />
+        <Services />
+        <Price />
+        <TitleAbout title="Nuestro Equipo" />
         <p className="text-lg md:text-xl text-gray-700 dark:text-gray-400 max-w-2xl mx-auto">
           Conoce a los integrantes que conforman nuestro equipo de manera
           dedicada y profesional.
