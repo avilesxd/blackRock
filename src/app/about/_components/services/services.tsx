@@ -2,7 +2,7 @@ import TitleAbout from "../shared/TitleAbout";
 
 const Services = () => {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 mt-8">
       <TitleAbout title="Servicios" />
       {/* Servicio 1 */}
       <div className="p-6 bg-white dark:bg-gray-900 border border-transparent rounded-xl shadow-lg hover:shadow-2xl transition-all">

@@ -6,7 +6,7 @@ import OurTeam from "./_components/ourTeam/OurTeam";
 
 function AboutPage() {
   return (
-    <section className="py-16 px-6 md:px-10 dark:from-gray-900 dark:to-gray-800">
+    <section className="container py-16 px-6 md:px-10 dark:from-gray-900 dark:to-gray-800">
       <AboutUs />
       <Services />
       <Price />
